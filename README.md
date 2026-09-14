@@ -82,11 +82,11 @@ GitHub Pages 会给 CSS/JS 设 10 分钟缓存，浏览器可能读到旧文件�
 所以 `index.html` 里的引用带了版本号：
 
 ```html
-<link rel="stylesheet" href="styles.css?v=2">
-<script src="main.js?v=2"></script>
+<link rel="stylesheet" href="styles.css?v=3">
+<script src="main.js?v=3"></script>
 ```
 
-**只要改了 `styles.css` 或 `main.js`，就把 `v=2` 改成 `v=3`、`v=4`…** 再推送，
+**只要改了 `styles.css` 或 `main.js`，就把 `v=3` 改成 `v=4`、`v=5`…** 再推送，
 访客刷新就能立刻看到新版本。只改图片或文字（index.html）不用动它。
 
 ## 网站图片 ↔ 原始照片对照
