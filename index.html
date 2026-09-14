@@ -17,9 +17,9 @@
 <meta name="theme-color" content="#0a0c0f">
 
 <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
-<!-- 改了 styles.css 或 main.js 之后，把下面的 v=2 递增一下（v=3、v=4…），
+<!-- 改了 styles.css 或 main.js 之后，把下面的 v=3 递增一下（v=4、v=5…），
      浏览器就会立刻加载新版本，不会读到旧的缓存 -->
-<link rel="stylesheet" href="styles.css?v=2">
+<link rel="stylesheet" href="styles.css?v=3">
 </head>
 <body>
 
@@ -46,7 +46,8 @@
   <section class="hero wrap">
     <div class="hero__text">
       <p class="eyebrow">硬件作品集 · HARDWARE PORTFOLIO</p>
-      <h1>数控电源与嵌入式硬件<span>实物设计与调试记录</span></h1>
+      <!-- 页面上不显示大标题，但留一个给搜索引擎和读屏软件看的标题 -->
+      <h1 class="sr-only">硬件作品集：200W 数控电源、STM32 倒立摆、智能小车、USB 拓展坞</h1>
       <p class="lead">200W 数控电源、STM32 倒立摆、电赛智能小车与 USB 拓展坞，均为自己画板、打样并调通的作品。点击图片可看大图。</p>
       <ul class="chips chips--nav">
         <li><a href="#psu">200W 数控电源</a></li>
@@ -334,6 +335,6 @@
   </figure>
 </div>
 
-<script src="main.js?v=2"></script>
+<script src="main.js?v=3"></script>
 </body>
 </html>
