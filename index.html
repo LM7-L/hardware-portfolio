@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- 上线后把下面 3 处 https://your-site.example.com/ 换成你的真实网址即可（用于分享卡片预览） -->
+<title>硬件作品集 | 数控电源 · STM32 倒立摆 · 智能小车 · USB 拓展坞</title>
+<meta name="description" content="硬件作品集：200W 数控电源、STM32 PID 倒立摆、电赛智能小车、USB 2.0 拓展坞，实物设计与调试记录。">
+<link rel="canonical" href="https://your-site.example.com/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="硬件作品集 | 数控电源 · STM32 倒立摆 · 智能小车 · USB 拓展坞">
+<meta property="og:description" content="200W 数控电源 · STM32 PID 倒立摆 · 电赛智能小车 · USB 2.0 拓展坞，实物设计与调试记录。">
+<meta property="og:url" content="https://your-site.example.com/">
+<meta property="og:image" content="https://your-site.example.com/images/full/psu-cover.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0a0c0f">
+
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip" href="#psu">跳到作品</a>
+
+<header class="nav" id="nav">
+  <div class="wrap nav__inner">
+    <a class="nav__brand" href="#top">
+      <span class="nav__dot" aria-hidden="true"></span>
+      <span>硬件作品集</span>
+    </a>
+    <nav class="nav__links" aria-label="页面导航">
+      <a href="#psu">数控电源</a>
+      <a href="#pendulum">倒立摆</a>
+      <a href="#more">更多作品</a>
+      <a href="#contact">联系</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ================= 首屏 ================= -->
+  <section class="hero wrap">
+    <div class="hero__text">
+      <p class="eyebrow">硬件作品集 · HARDWARE PORTFOLIO</p>
+      <h1>数控电源与嵌入式硬件<span>实物设计与调试记录</span></h1>
+      <p class="lead">200W 数控电源、STM32 倒立摆、电赛智能小车与 USB 拓展坞，均为自己画板、打样并调通的作品。点击图片可看大图。</p>
+      <ul class="chips">
+        <li>200W 数控电源</li>
+        <li>STM32 倒立摆</li>
+        <li>智能小车</li>
+        <li>USB 拓展坞</li>
+      </ul>
+      <div class="hero__cta">
+        <a class="btn btn--primary" href="#psu">查看作品</a>
+      </div>
+    </div>
+
+    <div class="feat">
+      <a class="feat__card" href="#psu">
+        <img src="images/thumb/psu-cover.jpg" width="675" height="900" alt="200W 数控电源输出显示：28.02 V / 0.013 A" fetchpriority="high" decoding="async">
+        <span class="feat__meta">
+          <em>01</em>
+          <strong>200W 数控电源</strong>
+        </span>
+      </a>
+      <a class="feat__card" href="#pendulum">
+        <img src="images/thumb/pendulum-01.jpg" width="675" height="900" alt="STM32 PID 倒立摆装置" decoding="async">
+        <span class="feat__meta">
+          <em>02</em>
+          <strong>STM32 倒立摆</strong>
+        </span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ================= 项目 01：数控电源 ================= -->
+  <section class="section project" id="psu">
+    <div class="wrap">
+      <header class="project__head">
+        <p class="project__index">项目 01</p>
+        <h2>200W 数控电源</h2>
+        <p class="project__desc">功率板、控制板与显示面板三部分，打样后逐路核对输出。</p>
+      </header>
+
+      <div class="masonry">
+        <figure class="shot">
+          <button class="shot__btn" type="button">
+            <img src="images/thumb/psu-cover.jpg" width="675" height="900" loading="lazy" decoding="async"
+                 alt="200W 数控电源输出显示：V 28.02 V、I 0.013 A、P 000.3 W，DIG PWR CV 指示">
+          </button>
+          <figcaption>
+            <span class="shot__no">封面</span>
+            <span class="shot__text">封面 · 输出显示<em>Cover · output readout</em></span>
+          </figcaption>
+        </figure>
+
+        <figure class="shot">
+          <button class="shot__btn" type="button">
+            <img src="images/thumb/psu-01.jpg" width="675" height="900" loading="lazy" decoding="async"
+                 alt="200W 数控电源功率板，可见大电流电感与电解电容">
+          </button>
+          <figcaption>
+            <span class="shot__no">01</span>
+            <span class="shot__text">主功率板 · DC-DC 降压<em>Main power stage</em></span>
+          </figcaption>
+        </figure>
+
+        <figure class="shot">
+          <button class="shot__btn" type="button">
+            <img src="images/thumb/psu-02.jpg" width="675" height="900" loading="lazy" decoding="async"
+                 alt="数控电源功率板，板上有多路稳压与滤波电路">
+          </button>
+          <figcaption>
+            <span class="shot__no">02</span>
+            <span class="shot__text">功率板 · 多路稳压<em>Multi-rail power board</em></span>
+          </figcaption>
+        </figure>
+
+        <figure class="shot">
+          <button class="shot__btn" type="button">
+            <img src="images/thumb/psu-03.jpg" width="675" height="900" loading="lazy" decoding="async"
+                 alt="数控电源控制板，中间为主控芯片，四周为排针与接口">
+          </button>
+          <figcaption>
+            <span class="shot__no">03</span>
+            <span class="shot__text">控制板<em>Control board</em></span>
+          </figcaption>
+        </figure>
+
+        <figure class="shot">
+          <button class="shot__btn" type="button">
+            <img src="images/thumb/psu-04.jpg" width="675" height="900" loading="lazy" decoding="async"
+                 alt="控制板第三版，带显示屏与排线接口">
+          </button>
+          <figcaption>
+            <span class="shot__no">04</span>
+            <span class="shot__text">控制板 · 显示与接口<em>Display &amp; interface</em></span>
+          </figcaption>
+        </figure>
+
+        <figure class="shot">
+          <button class="shot__btn" type="button">
+            <img src="images/thumb/psu-05.jpg" width="675" height="900" loading="lazy" decoding="async"
+                 alt="电源整机装配的侧面视角，功率板与结构件堆叠">
+          </button>
+          <figcaption>
+            <span class="shot__no">05</span>
+            <span class="shot__text">整机装配<em>Assembly</em></span>
+          </figcaption>
+        </figure>
+
+        <figure class="shot">
+          <button class="shot__btn" type="button">
+            <img src="images/thumb/psu-06.jpg" width="900" height="675" loading="lazy" decoding="async"
+                 alt="工作台上用万用表与功率表测量电源输出，读数 28.20 伏">
+          </button>
+          <figcaption>
+            <span class="shot__no">06</span>
+            <span class="shot__text">上电实测 28.20 V<em>Bench test</em></span>
+          </figcaption>
+        </figure>
+
+        <figure class="shot">
+          <button class="shot__btn" type="button">
+            <img src="images/thumb/psu-07.jpg" width="900" height="675" loading="lazy" decoding="async"
+                 alt="工作台实测输出，万用表读数 8.20 伏">
+          </button>
+          <figcaption>
+            <span class="shot__no">07</span>
+            <span class="shot__text">上电实测 8.20 V<em>Bench test</em></span>
+          </figcaption>
+        </figure>
+
+        <figure class="shot">
+          <button class="shot__btn" type="button">
+            <img src="images/thumb/psu-08.jpg" width="900" height="675" loading="lazy" decoding="async"
+                 alt="工作台实测输出，万用表读数 32.0 伏">
+          </button>
+          <figcaption>
+            <span class="shot__no">08</span>
+            <span class="shot__text">上电实测 32.0 V<em>Bench test</em></span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 项目 02：STM32 倒立摆 ================= -->
+  <section class="section project" id="pendulum">
+    <div class="wrap">
+      <header class="project__head">
+        <p class="project__index">项目 02</p>
+        <h2>STM32 倒立摆</h2>
+        <p class="project__desc">基于 STM32 的旋转倒立摆，PID 闭环把摆杆稳定在竖直位置。</p>
+      </header>
+      <div class="split">
+        <div class="split__text">
+          <ul class="chips">
+            <li>STM32 主控</li>
+            <li>PID 闭环</li>
+            <li>结构自搭</li>
+          </ul>
+        </div>
+        <figure class="shot">
+          <button class="shot__btn" type="button">
+            <img src="images/thumb/pendulum-01.jpg" width="675" height="900" loading="lazy" decoding="async"
+                 alt="STM32 PID 倒立摆装置：白色结构底座、摆臂与驱动控制板">
+          </button>
+          <figcaption>
+            <span class="shot__no">09</span>
+            <span class="shot__text">倒立摆整机<em>Rotary inverted pendulum</em></span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 更多作品 ================= -->
+  <section class="section section--alt" id="more">
+    <div class="wrap">
+      <div class="section__head">
+        <h2>更多作品</h2>
+      </div>
+
+      <article class="project project--sub">
+        <header class="project__head">
+          <p class="project__index">项目 03</p>
+          <h3>USB 2.0 拓展坞 &amp; 升降压电源模块</h3>
+          <p class="project__desc">USB 2.0 四口拓展坞主板；升降压模块输出 12 V / 5 V / 3.3 V。</p>
+        </header>
+        <div class="masonry masonry--three">
+          <figure class="shot">
+            <button class="shot__btn" type="button">
+              <img src="images/thumb/usb-01.jpg" width="675" height="900" loading="lazy" decoding="async"
+                   alt="USB 2.0 拓展坞主板，蓝色 PCB 上可见 USB 接口与 HUB 芯片">
+            </button>
+            <figcaption>
+              <span class="shot__no">10</span>
+              <span class="shot__text">USB 2.0 拓展坞主板<em>USB 2.0 hub board</em></span>
+            </figcaption>
+          </figure>
+
+          <figure class="shot">
+            <button class="shot__btn" type="button">
+              <img src="images/thumb/buck-01.jpg" width="675" height="900" loading="lazy" decoding="async"
+                   alt="升降压电源模块正面，含 DC 输入座、USB 输入口与多路稳压电路">
+            </button>
+            <figcaption>
+              <span class="shot__no">11</span>
+              <span class="shot__text">升降压电源模块<em>Buck-boost module</em></span>
+            </figcaption>
+          </figure>
+
+          <figure class="shot">
+            <button class="shot__btn" type="button">
+              <img src="images/thumb/buck-02.jpg" width="675" height="900" loading="lazy" decoding="async"
+                   alt="升降压电源模块上电，各路指示灯点亮，数码管显示工作电压">
+            </button>
+            <figcaption>
+              <span class="shot__no">12</span>
+              <span class="shot__text">升降压模块上电<em>Powered up</em></span>
+            </figcaption>
+          </figure>
+        </div>
+      </article>
+
+      <article class="project project--sub">
+        <header class="project__head">
+          <p class="project__index">项目 04</p>
+          <h3>电赛智能小车</h3>
+          <p class="project__desc">自动行驶小车（校赛二等奖）与自动识别图像打靶小车系统。</p>
+        </header>
+        <div class="masonry masonry--two">
+          <figure class="shot">
+            <button class="shot__btn" type="button">
+              <img src="images/thumb/car-01.jpg" width="900" height="506" loading="lazy" decoding="async"
+                   alt="自动识别图像打靶小车系统：赛道上的小车与独立图像处理模块">
+            </button>
+            <figcaption>
+              <span class="shot__no">13</span>
+              <span class="shot__text">图像识别打靶小车系统<em>Vision targeting car</em></span>
+            </figcaption>
+          </figure>
+
+          <figure class="shot">
+            <button class="shot__btn" type="button">
+              <img src="images/thumb/car-02.jpg" width="675" height="900" loading="lazy" decoding="async"
+                   alt="自动行驶小车整车，主控板、显示模块与传感器接线">
+            </button>
+            <figcaption>
+              <span class="shot__no">14</span>
+              <span class="shot__text">自动行驶小车 · 校赛二等奖<em>Line-following car</em></span>
+            </figcaption>
+          </figure>
+        </div>
+      </article>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer" id="contact">
+  <div class="wrap footer__inner">
+    <div>
+      <p class="eyebrow">CONTACT</p>
+      <h2>联系我</h2>
+    </div>
+    <ul class="footer__contact">
+      <li><span>邮箱</span><b>Ldefeng0103@163.com</b></li>
+    </ul>
+  </div>
+  <div class="wrap footer__base">
+    <span>硬件作品集</span>
+    <span>照片均为实物拍摄</span>
+  </div>
+</footer>
+
+<!-- ================= 大图查看 ================= -->
+<div class="lb" id="lightbox" role="dialog" aria-modal="true" aria-label="查看大图" hidden>
+  <div class="lb__backdrop" data-lb-close></div>
+  <button class="lb__btn lb__btn--prev" type="button" aria-label="上一张" data-lb-prev>‹</button>
+  <button class="lb__btn lb__btn--next" type="button" aria-label="下一张" data-lb-next>›</button>
+  <button class="lb__btn lb__btn--close" type="button" aria-label="关闭" data-lb-close>✕</button>
+  <figure class="lb__figure">
+    <img class="lb__img" id="lbImg" alt="">
+    <figcaption class="lb__cap">
+      <span id="lbCap"></span>
+      <span class="lb__counter" id="lbCounter"></span>
+    </figcaption>
+  </figure>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
