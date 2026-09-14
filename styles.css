@@ -140,6 +140,18 @@ button{font-family:inherit}
   background:rgba(255,255,255,.03);
 }
 
+/* 可点击的标签：点一下跳到对应作品 */
+.chips--nav li{padding:0;transition:border-color .2s ease, background .2s ease}
+.chips--nav li:hover{border-color:rgba(242,168,59,.55);background:var(--accent-soft)}
+.chips--nav a{
+  display:block;
+  padding:6px 12px;
+  border-radius:999px;
+  color:inherit;
+  transition:color .2s ease;
+}
+.chips--nav a:hover{color:var(--accent)}
+
 .hero__cta{display:flex;flex-wrap:wrap;gap:12px}
 .btn{
   display:inline-flex;align-items:center;gap:8px;
@@ -224,6 +236,7 @@ button{font-family:inherit}
 
 /* ================= 项目区块 ================= */
 .project + .project{margin-top:clamp(46px,6vw,76px)}
+.project--sub{scroll-margin-top:78px}
 .project__head{max-width:none;margin-bottom:32px}
 .project__index{
   display:flex;align-items:center;gap:10px;flex-wrap:wrap;
