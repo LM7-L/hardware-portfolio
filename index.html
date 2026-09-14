@@ -17,7 +17,9 @@
 <meta name="theme-color" content="#0a0c0f">
 
 <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="styles.css">
+<!-- 改了 styles.css 或 main.js 之后，把下面的 v=2 递增一下（v=3、v=4…），
+     浏览器就会立刻加载新版本，不会读到旧的缓存 -->
+<link rel="stylesheet" href="styles.css?v=2">
 </head>
 <body>
 
@@ -332,6 +334,6 @@
   </figure>
 </div>
 
-<script src="main.js"></script>
+<script src="main.js?v=2"></script>
 </body>
 </html>
