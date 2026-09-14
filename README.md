@@ -43,11 +43,21 @@ site/
 
 同样支持拖拽上传文件夹，流程与方式 A 类似。
 
-## 上线后只改一处
+## 网址与更新方式
 
-`index.html` 里有 3 个 `https://your-site.example.com/`（canonical、og:url、og:image），
-换成你的真实网址即可。它的作用是：链接被发到微信 / QQ 时能显示标题和封面图。
-不换也能正常访问，只是分享卡片不好看。
+线上地址：**https://lm7-l.github.io/hardware-portfolio/**
+
+因为这台电脑连不上 github.com 的 443 端口（git push 会被重置），所以更新网站走
+GitHub API：改完 `site` 里的内容后，在这个文件夹执行
+
+```powershell
+.\推送到GitHub.ps1
+```
+
+它会自动上传所有文件并生成一个新提交，1–2 分钟后线上就更新了。
+
+`index.html` 里的 canonical / og:url / og:image 已经填好真实网址（链接分享到微信、
+QQ 时显示的标题和封面图就靠它）。
 
 ## 二维码（与网站分开）
 
