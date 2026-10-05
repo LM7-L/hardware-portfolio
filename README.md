@@ -102,6 +102,10 @@ GitHub Pages 会给 CSS/JS 设 10 分钟缓存，浏览器可能读到旧文件�
 | psu-06 | 200w数控电源图1.jpg | 上电实测 28.20 V |
 | psu-07 | 200w数控电源图3.jpg | 上电实测 8.20 V |
 | psu-08 | 200w数控电源图4.jpg | 上电实测 32.0 V |
+| wave-01 | 15V空载纹波.BMP | 空载输出纹波（示波器截图） |
+| wave-02 | 15V 3A纹波.BMP | 3 A 负载纹波（示波器截图） |
+| wave-03 | 15V1a-3a.BMP | 负载跳变 1 A → 3 A |
+| wave-04 | 15V 9A短路释放.BMP | 短路释放恢复 |
 | pendulum-01 | STM32PID倒立摆.jpg | 倒立摆整机 |
 | usb-01 | USB2.0拓展坞.jpg | USB 2.0 拓展坞主板 |
 | usb-02 | USB2.0拓展坞2.jpg | USB 2.0 拓展坞 · 接口布局 |
