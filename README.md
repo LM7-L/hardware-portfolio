@@ -105,7 +105,6 @@ GitHub Pages 会给 CSS/JS 设 10 分钟缓存，浏览器可能读到旧文件�
 | wave-01 | 15V空载纹波.BMP | 空载输出纹波（示波器截图） |
 | wave-02 | 15V 3A纹波.BMP | 3 A 负载纹波（示波器截图） |
 | wave-03 | 15V空再启动.BMP | 空载上电启动 |
-| wave-04 | 15V 9A短路释放.BMP | 短路释放恢复 |
 | pendulum-01 | STM32PID倒立摆.jpg | 倒立摆整机 |
 | usb-01 | USB2.0拓展坞.jpg | USB 2.0 拓展坞主板 |
 | usb-02 | USB2.0拓展坞2.jpg | USB 2.0 拓展坞 · 接口布局 |
